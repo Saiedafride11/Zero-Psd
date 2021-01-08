@@ -1,0 +1,591 @@
+/*************************************************************
+                    Start Global area
+*************************************************************/
+.section-padding{
+    padding-top: 70px;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    transition: .5s;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+/*************************************************************
+                    Start header-section
+*************************************************************/
+.header-section{
+    width: 100%;
+}
+.header-section .header-left{
+    text-align: center;
+}
+.header-section .header-left:after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: #a6a6a6;
+    right: -15px;
+}
+.header-section .header-left img{
+    width: 80%;
+    margin:10px 0px 10px 40px
+}
+.header-right{
+    margin-right: -15px !important;
+} 
+.header-section .header-right-top{
+   background-color: #ededed;
+}
+.nav{
+    margin-bottom:10px
+}
+.header-section .header-right-top a{
+   color: #a6a6a6 !important;
+   margin-right: 15px;
+   border-left: 2px solid transparent;
+   border-bottom: 2px solid transparent;
+}
+
+.header-section .header-right-bottom a{
+   color: #707070 !important;
+   text-transform: uppercase;
+   font-weight:700;
+   font-size:15px;
+   margin-right: 15px;
+   border-left: 2px solid transparent;
+   border-bottom: 2px solid transparent;
+}
+.header-section .header-right-top a:hover, .header-section .header-right-bottom a:hover{
+    color: #ff8f1c !important;
+    border-left: 2px solid #ff8f1c;
+    border-bottom: 2px solid #ff8f1c;
+    transition: 1s;
+}
+.header-color-1{
+    background-color: #ff8f1c;
+    height:3px
+}
+.header-color-2{
+    background-color: #61bb46;
+    height:3px
+}
+.header-color-3{
+    background-color: #0554a6;
+    height:3px
+}
+.header-color-4{
+    background-color: #009f4d;
+    height:3px
+}
+
+.isStuck{
+    left: 0px;
+    width: 100%;
+    background: #fff;
+}
+.navbar-wrapper{
+    width: 100%;
+    margin-top: 0px;
+    position: relative;
+    z-index: 15;
+}
+/*************************************************************
+                    Start carousel-caption
+*************************************************************/
+.carousel-caption {
+    text-align: left !important;
+    bottom:130px !important;
+}
+.carousel-caption h1 {
+    font-size:60px;
+}
+.carousel-caption p {
+    margin-top:10px
+}
+.carousel-caption .corosoul-btn {
+	padding: 20px 60px;
+	color: #fff;
+	background-color: #456d00;
+	text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 700;
+    border-radius: 60px;
+    border: 2px solid #fff ;
+}
+.carousel-caption .corosoul-btn:hover{
+    color: #fff;
+    background-color: #ff8f1c;
+    transition: 1s;
+}
+
+/*************************************************************
+                    Start info-section
+*************************************************************/
+.info-section{
+    width: 100%;
+}
+.info-inner{
+   height: 130px;
+   width: 100%;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   margin:0 auto;
+  
+}
+.info-inner .media{
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   margin:0 auto;
+   text-transform: uppercase;
+   color: #fff;
+   font-size:22px
+}
+.blue-bg{
+    background: #005dbd;
+}
+.bg-pink{
+	background: #dd00d5;
+
+}
+.bg-olive{
+	background: #456d00;
+
+}
+.bg-green{
+	background: #009f4d;
+}
+/*************************************************************
+                    Start program-section
+*************************************************************/
+.program-section{
+    width: 100%;
+    background: #fff;
+}
+.program-section h3{
+    text-transform: uppercase;
+}
+.program-inner{
+	margin-top: 50px;
+}
+.program-text-area{
+    margin-top: 20px;
+    padding-bottom: 60px;
+}
+.program-text-area h4{
+	text-transform: uppercase
+}
+.program-section .program-inner .program-text-area ul li {
+	position: relative;
+	font-size: 18px;
+    color: #333333;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+.program-section .program-inner .program-text-area ul li::after {
+	content: url(../images/list-icon-img.png);
+	position: absolute;
+	left: -30px;
+	top: 3px;
+}
+.program-section .program-inner .program-text-area .program-btn {
+	padding: 20px 60px;
+	color: #456d00;
+	border: 2px solid #456d00;
+	text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 700;
+    border-radius: 60px;
+}
+.program-section .program-inner .program-text-area .program-btn:hover{
+    color: #ff8f1c;
+    border: 2px solid transparent;
+    background-color: #456d00;
+    transition: 1s;
+}
+/*************************************************************
+                     Start action-section
+*************************************************************/
+.action-section{
+    width: 100%;
+    background-color: #456d00;
+    height: 300px;
+}
+.action-inner{
+    color: #fff
+}
+.action-inner h2{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.program-btn {
+	padding: 20px 60px;
+	color: #456d00;
+	border: 2px solid #456d00;
+	text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 700;
+    border-radius: 60px;
+}
+.program-btn:hover{
+    color: #fff;
+    border: 2px solid transparent;
+    background-color: #ff8f1c;
+    transition: 1s;
+}
+/*************************************************************
+                    Start web-section
+*************************************************************/
+.web-section{
+    width: 100%;
+}
+.web-section .web-text-area{
+    width: 100%;
+}
+.web-section .web-text-area h5 {
+    font-size: 25px;
+    font-weight:700;
+}
+.web-section .web-text-area p {
+	color: #333333;
+	font-size: 15px;
+	line-height: 22px;
+}
+.web-list-area {
+    margin-top: 30px;
+    overflow: hidden;
+}
+.web-section .web-list-area ul li {
+	position: relative;
+	font-size: 15px;
+    color: #333333;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+.web-section .web-list-area ul li::after{
+    content: url(../images/list-icon-img.png);
+	position: absolute;
+	left: -30px;
+	top: 3px;
+}
+.web-btn {
+	padding: 20px 60px;
+	color: #fff;
+	background-color: #456d00;
+	text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 700;
+    border-radius: 60px;
+    border: transparent;
+}
+.web-btn:hover{
+    color: #fff;
+    background-color: #ff8f1c;
+    transition: 1s;
+}
+
+.web-img-area img {
+	width: 114%;
+	height: 100vh;
+}
+
+/*************************************************************
+                    Start calender section
+*************************************************************/
+.calendar-section{
+    width: 100%;
+    background: #f7f7f7;
+    padding-bottom: 70px;
+}
+.calendar-section .title-section {
+	margin-bottom: 50px;
+}
+.calendar-section .title-section-extra {
+	margin-bottom: 14px;
+}
+.calendar-section .title-section h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* .calendar-section .title-section .icon-area i {
+	color: #e5e5e5;
+	height: 30px;
+	width: 30px;
+	border: 1px solid #e5e5e5;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.calendar-section .title-section .icon-area i:hover{
+    color: #ff8f1c;
+    border: 1px solid #ff8f1c;
+} */
+.calendar-section .single-calender {
+	background: #efefef;
+	border: 1px solid #d9d9d9;
+	overflow: hidden;
+	padding:15px;
+	border-left: 3px solid #f7941e;
+    margin-top: 14px;
+    margin-bottom:11px
+}
+.border-left-lime {
+
+	border-left: 3px solid #61bb46 !important;
+}
+.border-left-blue {
+
+	border-left: 3px solid #0554a6 !important;
+}
+.calendar-section .single-calendar img {
+    width: 100%;
+}
+.calendar-section .single-calender h5 span {
+    font-size: 23px;
+    font-weight: 700
+}
+.calendar-section .single-calender .calendar-details h6 {
+    font-size: 16px;
+    font-weight: 700;
+}
+.calendar-section .single-calender .calendar-details p {
+    font-size: 12px;
+    color: #999999;
+    margin-top: 9px;
+    margin-bottom: 0px;
+}
+.calendar-section .single-calender .calendar-details i {
+	font-size: 14px;
+	color: #000;
+    margin-right: 5px;
+}
+.calendar-section .single-calender .calendar-details span {
+    margin-left: 17px;
+}
+.calendar-section .single-spotlight {
+	background: url(../images/calendar-img-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 59px 124px 60px 40px;
+	margin-top: 10px;
+}
+.calendar-section .title-section-extra h2{
+    text-transform: uppercase;
+    font-weight:700
+}
+.calendar-section .single-spotlight h2{
+    color: #fff;
+}
+.owl-theme .owl-dots .owl-dot span {
+    display: none;
+}
+.owl-carousel .owl-nav button.owl-prev{
+    top: -50px;
+    right: 35px;
+    position: absolute;
+    border: none;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color:#0554a6
+}
+.owl-carousel .owl-nav button.owl-next{
+    top: -50px;
+    right: -4px;
+    position: absolute;
+    border: none;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color:#0554a6
+}
+.owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover{
+    background-color: #f7941e;
+    border: none;
+    color: #000;
+    transition: 1s;
+}
+/*************************************************************
+                    Start traffic-section
+*************************************************************/
+.traffic-section{
+    width: 100%;
+}
+.traffic-section .container-fluid{
+    padding-left:0px;
+}
+.traffic-img-area img {
+    width: 100%;
+    height: 100vh;
+}
+.traffic-section .traffic-text-area{
+    width: 100%;
+    padding:80px 0px
+}
+.traffic-section .traffic-text-area h6 {
+    font-size: 16px;
+    font-weight:500;
+    color: #61bb46;
+}
+.traffic-section .traffic-text-area h5 {
+    font-size: 35px;
+    font-weight:500;
+    margin-top: 20px;
+}
+.traffic-section .traffic-text-area p {
+	color: #333333;
+	font-size: 15px;
+    line-height: 22px;
+    margin-top: 20px;
+}
+.traffic-btn {
+	color: #456d00;
+	text-transform: uppercase;
+    margin-top: 50px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.traffic-btn:hover{
+    color: #ff8f1c;
+    transition: 1s;
+}
+
+/*************************************************************
+                    Start Footer-section
+*************************************************************/
+.footer-section{
+    width: 100%;
+    background: #0554a6;
+    padding-bottom: 40px;
+}
+.footer-section .footer-logo-area{
+	width: 100%;
+	margin-top: 120px;
+}
+.footer-section .footer-logo-area img{
+    width: 100%;
+}
+.footer-section .footer-list-area{
+    width: 100%;
+    padding: 0 30px;
+}
+.footer-section .footer-list-area p{
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    color: #fff;
+    font-size:20px;
+    text-transform: uppercase;
+}
+.footer-section .footer-list-area p::after{
+    content: '';
+    position: absolute;
+    width:60px;
+    height: 2px;
+    background-color: #fff;
+    background-color: #fff;
+    left: 19px;
+    top: 39px;
+}
+.footer-section .footer-list-area ul{
+    display: inline-block;
+}
+.footer-section .footer-list-area ul li a{
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    padding: 0px 20px;
+}
+.footer-section .footer-contact-area{
+    padding: 0 20px;
+}
+.footer-section .footer-contact-area p{
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    color: #fff;
+    font-size:20px;
+    text-transform: uppercase;
+}
+.footer-section .footer-contact-area p::after{
+    content: '';
+    position: absolute;
+    width:60px;
+    height: 2px;
+    background-color: #fff;
+    background-color: #fff;
+    left: 0px;
+    top: 36px;
+}
+.footer-section .footer-contact-area ul li {
+    margin-bottom: 10px;
+    
+}
+.footer-section .footer-contact-area ul li, .footer-section .footer-contact-area ul li a{
+    font-size: 15px;
+    color: #fff;  
+}
+.footer-section .footer-contact-area h6{
+    font-size: 20px;
+    color: #fff;  
+    margin-top:30px
+}
+.footer-section .footer-contact-area ul li a span {
+	margin-left: 30px;
+}
+.footer-section .footer-contact-area ul li a i{
+    margin-right: 10px;
+    
+}
+/*************************************************************
+                    Start copy-right-section
+*************************************************************/
+.copy-right-section {
+	width: 100%;
+	padding: 30px 0;
+	background: #333;
+	overflow: hidden;
+}
+.copy-right-section p{
+    font-size: 16px;
+    color: #fff;
+}
+.copy-right-section p span{
+    font-size: 16px;
+}
+.copy-right-section a{
+   color: #fff;
+   font-size: 24px;
+   margin-right: 10px;
+}
+
+/*************************************************************
+                     End Copy-Right section
+*************************************************************/
